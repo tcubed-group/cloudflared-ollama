@@ -1,0 +1,9 @@
+
+tunnel: uuid-for-ollama
+#Optional
+#credentials-file: /etc/cloudflared/uuid-for-ollama.json
+
+ingress:
+  - hostname: 
+    service: http://ollama:11434
+  - service: http_status:404
